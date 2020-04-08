@@ -1,0 +1,605 @@
+/* All Setting */
+/* MARGIN SETTING */
+section.about, article.about .subtitle, article.about p:last-of-type, div.google .subtitle, article.vision .subtitle, article.vision p:last-child, article.history .content, section.history h3, #service>.wrap, #service section.more, section.news, nav.recruit ul li, article.recruit, .hide {
+	margin-bottom: 60px;  /* 60px -> 45px -> 30px */
+}
+.about_more h2, section.vision  {
+	margin-top: 60px; /* 60px -> 45px -> 30px */
+}
+section.about, #service h2, #news h2, #recruit h2 {
+	margin-top: 90px; /* 90px -> 75px -> 60px */
+}
+.about_more .subtitle, .about_more p, div.google p, article.vision p, article.history .content>div .subtitle, article.service>img, article.service>p, article.service>h3, #service article.more h3, article.news h3, article.news>p, article.recruit ol li {
+	margin-bottom: 30px; /* 30px -> 20px -> 20px */
+}
+.about_more h2, .about_more p, article.vision *, section.history>.wrap>*, #service h2, #news h2, section.news, #recruit h2, nav.recruit {
+	margin-left: 30px;
+}
+
+/* FONT SETTING */
+#header .intro, .about_more h2, article.service>h3, #service article.more h3, #news h2, #recruit h2 {
+	font-size: 32px; /* 32px -> 28px -> 24px */
+}
+.about_more .subtitle, nav.recruit ul li a, article.recruit h3 span {
+	font-size: 24px; /* 24px -> 24px -> 20px */
+}
+article.news h3, article.recruit h3 {
+	font-size: 18px; /* 18px */
+}
+#header .intro, #nav, article.about span, section.about>article.more span, #service article.more span, article.more .point, #service article.more .homepage, nav.recruit ul li a {
+	font-family: 'roboto-bold';
+}
+
+/* COLOR SETTING */
+#header, .about_more, .about_more h2, article.vision h2, .service_btn, #service article.more, #service article.more h3 {
+	color: #fff;
+}
+#header .intro span, .about_btn, .about_more .subtitle, #service article.more .homepage, nav.recruit ul li:hover a, nav.recruit ul li.selected a, article.recruit h3 {
+	color: #f60;
+}
+#recruit h2, nav.recruit ul li a, article.recruit h3 span {
+	color: #003;
+}
+
+
+
+
+
+/* #header HEADER STYLE */
+#header {
+    width: 100%; /* maximum : 1903px */
+    background-color: #f7f7f8;
+    border-bottom: 1px solid #ccc;
+}
+
+#header .wrap {
+	height: 100%;
+}
+
+
+/* .logo Style */
+#logo
+{
+    width: 180px;
+    height: 30px;
+    margin: 30px;
+}
+#logo img
+{
+    width: 100%;
+    height: 100%;
+}
+
+/* #header>contact button */
+.header_btn {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	padding: 5px 10px;
+	border: 2px solid #fff;
+	font-size: 12px;
+}
+.header_btn:hover {
+	cursor: pointer;
+}
+
+/* #header>.introduction */
+#header .intro {
+	position: absolute;
+	bottom: 60px;
+	left: 30px;
+}
+#header .intro p {
+	margin-top: 30px;
+}
+
+
+
+
+
+/* #nav NAV STYLE */
+#nav {
+	width: 100%;
+	font-size: 24px;
+	border-bottom: 1px solid #ccc;
+	background-color: rgba(255, 255, 255, 0.9);
+	overflow: hidden;
+}
+#nav .desktop ul {
+	overflow: hidden;
+	margin-left: 60px;
+	float: left;
+}
+#nav .desktop ul li {
+	float: left;
+	margin-right: 151px;
+	padding: 28px 0;
+}
+/* .nav_btn STYLE */
+.nav_btn {
+	width: 124px;
+	height: 64px;
+	float: right;
+	background-color: #f93;
+	padding-top: 20px;
+	text-align: center;
+	position: absolute;
+	top: 0; right: 0;
+}
+.nav_btn:hover {
+	cursor: pointer;
+}
+.nav_btn img { /* Down Arrow */
+	width: 45px;
+	height: 45px;
+}
+
+
+
+
+
+/* #company SECITON STYLE */
+#company {
+	overflow: hidden;
+}
+
+/* About Section of #Company */
+section.about {
+	width: 100%;
+	/* max-width: 1200px; */
+	height: 100%;
+	/* margin: 0 auto; */
+	position: relative;
+}
+
+/* About Section First Image Style */
+section.about img {
+	width: 680px; height: 487px;
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	right: 0;
+}
+
+/* .about Article Style */
+article.about {
+	padding-left: 30px;
+	position: relative;
+	z-index: 1;
+}
+article.about .subtitle {
+	width: 100%;
+	max-width: 700px;
+}
+article.about p:last-of-type {
+	width: 100%;
+	max-width: 600px;
+}
+.hide {
+	display: none;
+}
+.hide>p:last-of-type {
+	margin-bottom: 0;
+}
+
+/* #about_more_btn Style */
+.about_btn {
+	display: block;
+	width: 100px;
+	padding-bottom: 5px;
+	border-bottom: 2px solid #fc9;
+}
+
+
+
+/* .about_more Article Style */
+.about_more {
+	width: 100%;
+	background-color: rgba(0, 0, 0, .8);
+	position: relative;
+	top: 0; left: 0;
+	z-index: 100;
+	overflow: hidden;
+}
+.about_more h2, .about_more p {
+	margin-right: 30px;
+}
+
+.about_exit {
+	display: block;
+	width: 30px; height: 30px;
+	position: absolute;
+	top: 30px; right: 30px;
+	padding: 7px;
+	border: 2px solid #fff;
+	overflow: hidden;
+	background: url(../images/exit.svg) center center no-repeat;
+	background-size: 30px;
+}
+
+
+
+/* Google Section of #Company */
+section.google {
+	overflow: hidden;
+}
+
+/* About Section First Image Style */
+section.google img {
+	width: 551px;
+	height: 512px;
+	float: left;
+	margin-right: -60px;
+}
+
+
+
+/* Vision Section of #company */
+section.vision {
+	width: 100%;
+	background: url(../images/sec1/core.png) center center no-repeat;
+}
+
+/* vision Article of #company */
+article.vision {
+	width: 100%;
+	max-width: 800px;
+}
+
+
+
+/* History Section of #company */
+section.history {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+/* .history Article of #company */
+article.history {
+	width: 6840px; /* width: 760px*2 */
+	overflow: hidden;
+}
+/* .content of .history */
+article.history .content {
+	width: 730px; /* width: 760px (+margin) */
+	overflow: hidden;
+	float: left;
+	margin-right: 30px;
+}
+article.history .content>img {
+	width: 350px; height: 285px; /* 700 * 570 */
+	float: left;
+	margin-right: 30px;
+}
+/* .content>div of .history */
+article.history .content>div {
+	width: 350px;
+	float: left;
+	word-wrap: break-word;
+}
+article.history .content>div .subtitle {
+	line-height: 1em;
+}
+article.history .content>div p {
+	word-wrap: break-word;
+}
+
+
+
+
+
+/* #service SECITON STYLE */
+#service {
+	width: 100%;
+	background-color: #003;
+	overflow: hidden;
+	position: relative;
+}
+#service>header {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+#service>.wrap {
+	position: relative;
+	max-width: 1140px;
+	padding: 0 30px;
+}
+section.service {
+	overflow: hidden;
+}
+
+/* article of #service Style */
+article.service {
+	width: 280px;
+	padding: 30px;
+	background-color: #f93;
+	text-align: center;
+	margin-right: 60px;
+	float: left;
+}
+article.service:last-child {
+	margin-right: 0;
+}
+.service_btn {
+	display: block;
+	margin: 0 auto;
+	width: 96px;
+	outline: 2px solid #fff;
+	padding: 15px 40px;
+
+}
+
+/* section.more of #service Style */
+#service section.more {
+	width: 100%;
+	max-width: 1200px;
+	position: relative;
+	top: 0; left: 50%;
+	transform: translateX(-50%);
+	z-index: 10;
+}
+
+/* article.more of #service Style */
+#service article.more {
+	padding: 30px 0;
+	width: 1200px; /* 1200 * 814*/
+	position: relative;
+}
+#service article.more>div:first-child {
+	overflow: hidden;
+}
+#service article.more h3 {
+	float: left;
+	margin-right: 15px;
+	margin-left: 60px;
+}
+#service article.more .content {
+	margin-left: 60px;
+	margin-right: 30px;
+}
+#service article.more iframe {
+	width: 640px; height: 360px;
+	margin-right: 30px;
+	margin-bottom: 30px;
+	float: left;
+}
+#service article.more p {
+	margin-bottom: 13px;
+}
+#service article.more span, article.more .point {
+	color: #f93;
+}
+article.more .exit {
+	position: absolute;
+	right: 30px;
+}
+#service article.more .homepage {
+	display: block;
+	width: 18px; height: 18px;
+	padding: 7px;
+	overflow: hidden;
+	background: url(../images/home.svg) center center no-repeat;
+	background-size: 28px;
+}
+#service article.more .exit {
+	display: block;
+	width: 30px; height: 30px;
+	top: 30px;
+	padding: 7px;
+	border: 2px solid #fff;
+	overflow: hidden;
+	background: url(../images/exit.svg) center center no-repeat;
+	background-size: 30px;
+}
+
+/* more tab background Setting */
+#service section.more article.gf {
+	background: url(../images/service/back_gf.png) center center no-repeat;
+	background-size: cover;
+	display: none;
+}
+#service section.more article.hk {
+	background: url(../images/service/back_hk.png) center center no-repeat;
+	background-size: cover;
+	display: none;
+}
+#service section.more article.al {
+	background: url(../images/service/back_al.png) center center no-repeat;
+	background-size: cover;
+	display: none;
+}
+
+
+
+
+
+/* #news SECTION STYLE */
+#news {
+	width: 100%;
+	position: relative;
+}
+section.news {
+	width: 3540px;
+	/* 720px*4 + 660px */
+	overflow: hidden;
+}
+article.news {
+	width: 100%; max-width: 600px; /* w:600 + p:60 + mr:60 */
+	height: 270px;
+	float: left;
+	margin-right: 60px;
+	padding: 45px 30px;
+	background-color: #fff;
+}
+article.news:last-child {
+	margin-right: 0;
+}
+article.news>p {
+	color: #999;
+}
+article.news .writer {
+	overflow: hidden;
+}
+article.news .writer>img {
+	width: 60px; height: 60px;
+	float: left;
+	margin-right: 15px;
+}
+article.news .writer>p {
+	float: left;
+	line-height: 60px;
+}
+
+
+
+
+
+/* #recruit SECTION STYLE */
+#recruit {
+	background-color: #fff;
+}
+
+
+/* nav.recruit of #recruit Style */
+nav.recruit {
+	float: left;
+	margin-right: 120px;
+}
+nav.recruit ul li {
+	overflow: hidden;
+	text-align: center;
+}
+
+
+
+/* article.recruit of #recruit Style */
+article.recruit {
+	width: 100%;
+	max-width: 878px;
+	float: left;
+	overflow: hidden;
+	margin-right: 30px;
+}
+article.recruit h3 {
+	margin-bottom: 15px;
+}
+article.recruit h3 span {
+	margin-right: 15px;
+}
+article.recruit p {
+	margin-left: 43px;
+}
+article.recruit p span {
+	font-family: 'Roboto-Bold';
+	margin-right: 15px;
+}
+.procedure {
+	/*display: none;*/
+}
+.jobintro {
+	display: none;
+}
+.benefit {
+	display: none;
+}
+
+
+
+
+
+/* #footer FOOTER STYLE */
+#footer {
+	background-color: rgba(0, 0, 0, .9);
+	color: #f7f7f8;
+	line-height: 1.75em;
+}
+#footer .wrap {
+	background-color: #fff;
+}
+#footer h2 {
+	font-size: 32px;
+	color: #fff;
+	margin-left: 60px;
+}
+#footer h2 span {
+	display: block;
+	margin-bottom: 30px;
+}
+#footer h3 {
+	margin-left: 30px;
+	margin-bottom: 30px;
+	font-size: 16px;
+}
+#footer h2, #footer h3 {
+	margin-top: 400px;
+}
+#footer address {
+	font-size: 12px;
+	margin-left: 30px;
+	font-style: normal;
+}
+#footer .wrap div {
+	float: left;
+}
+.footer:nth-of-type(4) h3 {
+	margin-left: 60px;
+}
+/* .footer of #footer Style */
+.footer {}
+.footer:nth-of-type(1), .footer:nth-of-type(4) {
+	width: 30%;
+	background-color: rgba(0, 0, 0, .9);
+}
+.footer:nth-of-type(2) {
+	width: 20%;
+	background-color: rgba(0, 0, 0, 1);
+}
+.footer:nth-of-type(3) {
+	width: 20%;
+	background-color: rgba(0, 0, 0, .8);
+}
+
+
+
+
+
+/* .popup Style */
+.popup {
+	display: none;
+	width: 280px;
+	position: absolute;
+	top: 50%; left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #f7f7f8;
+	outline: 10px solid #f60;
+	padding: 15px;
+	color: #003;
+}
+.popup p {
+	font-family: '돋움';
+	line-height: 2em;
+	font-size: 14px;
+	margin-bottom: 15px;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 15px;
+	text-align: justify;
+}
+.popup p span {
+	font-weight: bold;
+	color: #f60;
+}
+.pop_close {
+	text-align: right;
+}
+.pop_btn {
+	display: inline-block;
+	height: 25px;
+	padding: 0 14px 0;
+	border: 1px solid #006;
+	background-color: #003;
+	font-size: 13px;
+	color: #fff;
+	line-height: 25px;
+}

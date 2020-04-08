@@ -1,0 +1,593 @@
+@charset "utf-8";
+
+/* Desktop : MAX 1200 px Query */
+@media only screen and (max-width: 1199px) and (min-width: 1024px) {
+	/* COMMON STYLE */
+	h2 {
+		margin: 45px 0;
+	}
+	.subtitle {
+		font-size: 28px;
+		margin-bottom: 45px;
+	}
+
+
+
+	/* All Setting */
+	/* MARGIN SETTING */
+	section.about, article.about .subtitle, article.about p:last-of-type, div.google .subtitle, article.vision .subtitle, article.vision p:last-child, article.history .content, section.history h3, #service>.wrap, #service section.more, section.news, nav.recruit ul li, article.recruit, .hide, h2 {
+		margin-bottom: 45px; /* 60px -> 45px -> 30px */
+	}
+	.about_more h2, section.vision {
+		margin-top: 45px; /* 60px -> 45px -> 30px */
+	}
+	section.about, #service h2, #news h2, #recruit h2 {
+		margin-top: 75px; /* 90px -> 75px -> 60px */
+	}
+	.about_more .subtitle, .about_more p, div.google p, article.vision p, article.history .content>div .subtitle, article.service>img, article.service>p, article.service>h3, #service article.more h3, article.news h3, article.news>p, article.recruit ol li {
+		margin-bottom: 20px; /* 30px -> 20px */
+	}
+
+	/* FONT SETTING */
+	#header .intro, .about_more h2, article.service>h3, #service article.more h3, #news h2, #recruit h2 {
+		font-size: 28px; /* 32px -> 28px */
+	}
+
+
+
+	/* #nav STYLE */
+	#nav .desktop ul {
+		min-width: 1024px;
+	}
+	#nav .desktop ul li {
+		padding: 18px 0;
+		margin-right: 10.3%;
+	}
+	.nav_btn {
+		height: 54px;
+		padding-top: 10px;
+	}
+	.nav_btn img { /* Down Arrow */
+		width: 40px;
+		height: 40px;
+	}
+
+
+
+	/* .about Style */
+	section.about>img {
+		width: 523px; height: 413px; /* 600:473=x:413 */
+	}
+	article.about .subtitle {
+		max-width: 600px;
+	}
+	article.about p:last-of-type {
+		/* max-width: 550px; */
+	}
+
+
+
+	/* Google Section of #Company */
+	section.google img {
+		width: 430px; height: 400px; /* 551:512=x:400 */
+		float: left;
+		margin-right: -60px;
+	}
+
+
+
+	/* History Section of #Company */
+	article.history {
+		width: 5940px;
+	}
+	article.history .content {
+		width: 630px;
+	}
+	article.history .content>img {
+		width: 300px;
+		height: 245px;
+	}
+	article.history .content>div {
+		width: 300px;
+	}
+
+
+
+	/* #service SECITON STYLE */
+	#service h2 {
+		margin-top: 75px;
+	}
+	#service>.wrap {
+		margin-bottom: 45px;
+	}
+	article.service {
+		margin-right: 45px;
+	}
+	#service section.more {
+		width: 100%;
+		margin-bottom: 45px;
+	}
+	#service article.more {
+		padding-top: 30px;
+		width: 100%;
+		height: auto;
+		position: relative;
+	}
+
+
+
+	/* #news SECTION STYLE */
+	section.news {
+		max-width: 3540px;
+	}
+	article.news {
+		max-width: 600px; /* w:500 + p:60 + mr:60 */
+	}
+
+
+
+	/* #recruit SECTION STYLE */
+	nav.recruit {
+		margin-right: 60px;
+	}
+
+	/* END OF MIDEA QUERY */
+}
+
+
+
+/* Tablet : MAX 1023 px Query */
+@media only screen and (max-width: 1023px) {
+	/* MARGIN SETTING */
+	section.about, article.about, article.about .subtitle, article.about p:last-of-type, div.google .subtitle, article.vision .subtitle, article.vision p:last-child, article.history .content, section.history h3, #service>.wrap, #service section.more, section.news, nav.recruit ul li, article.recruit, .hide, h2 {
+		margin-bottom: 45px;  /* 60px -> 45px -> 30px */
+	}
+	.about_more h2, section.vision {
+		margin-top: 45px; /* 60px -> 45px -> 30px */
+	}
+	#service h2, #news h2, #recruit h2 {
+		margin-top: 75px; /* 90px -> 75px -> 60px */
+	}
+	.about_more .subtitle, .about_more p, div.google p, article.vision p, article.history .content>div .subtitle, article.service>img, article.service>p, article.service>h3, #service article.more h3, article.news h3, article.news>p, article.recruit ol li {
+		margin-bottom: 20px; /* 30px -> 20px -> 20px */
+	}
+
+	/* FONT SETTING */
+	#header .intro, .about_more h2, article.service>h3, #service article.more h3, #news h2, #recruit h2, .subtitle {
+		font-size: 28px; /* 32px -> 28px -> 24px */
+	}
+	.about_more .subtitle, nav.recruit ul li a, article.recruit h3 span {
+		font-size: 24px; /* 24px -> 24px -> 20px */
+	}
+	article.news h3, article.recruit h3 {
+		font-size: 18px; /* 18px */
+	}
+
+
+
+	/* desktop -> moblie */
+	.desktop { display: none; }
+	.mobile { display: block; }
+
+
+
+	/* #header HEADER STYLE */
+	#header {
+		border-bottom: none;
+	}
+	#header .intro {
+		bottom: 45px;
+	}
+
+
+	/* #nav NAV STYLE */
+	#nav {
+		/* 메뉴버튼을 누르면 나타남 */
+		display: none;
+		width: 100%; height: 100%;
+		position: fixed;
+		top: 0; left: 0; z-index: 1000;
+		font-size: 32px;
+		border-bottom: none;
+		background-color: rgba(255, 153, 51, .9);
+	}
+	#nav ul {
+		position: absolute;
+		top: 50%; left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	#nav ul li {
+		text-align: center;
+		margin-bottom: 60px;
+	}
+	#nav ul li:last-of-type {
+		margin-bottom: 0;
+	}
+	#nav .nav_exit {
+		display: block;
+		width: 30px; height: 30px;
+		position: absolute;
+		top: 30px;
+		right: 30px;
+		background: url(../images/exit.svg) center center no-repeat;
+		background-size: 30px 30px;
+	}
+
+	/* section : about STYLE */
+	section.about {
+		margin-top: 0;
+		margin-bottom: 0;
+		background: url(../images/sec1/about_1.png) center center no-repeat;
+		background-size: cover;
+	}
+	section.about .wrap {
+		background-color: rgba(0, 0, 0, .5);
+		color: #fff;
+	}
+	section.about img {
+		display: none;
+	}
+	article.about {
+		width: auto;
+	}
+	.about_more {
+		background: none;
+	}
+	.about_exit {
+		width: 20px; height: 20px;
+		background-size: 20px;
+	}
+
+	/* Google Section of #Company */
+	section.google {
+		background: url(../images/sec1/about_2a.png) center center no-repeat;
+		background-size: cover;
+	}
+	section.google .wrap {
+		background-color: rgba(255, 255, 255, .7);
+	}
+	section.google img {
+		display: none;
+	}
+	div.google {
+		margin: 0 30px;
+	}
+
+	/* Vision Section of #company */
+	section.vision {
+		margin-top: 0;
+	}
+
+	/* History Section of #Company */
+	article.history {
+		width: 4905px;
+	}
+	article.history .content {
+		width: 500px;
+		margin-right: 45px;
+	}
+	article.history .content>img {
+		width: 240px; height: 196px;
+		margin-right: 20px;
+		/* 300:245=240:196 */
+	}
+	article.history .content>div {
+		width: 240px;
+	}
+
+
+
+	/* #service SECITON STYLE */
+	#service>.wrap {
+		padding: 0;
+	}
+	article.service {
+		width: auto;
+		height: auto;
+		float: none;
+		text-align: left;
+		margin-bottom: 45px;
+		margin-right: 0;
+		padding: 20px;
+		position: relative;
+		overflow: hidden;
+	}
+	article.service img {
+		width: 160px; height: auto;
+		float: left;
+		margin-bottom: 0;
+		margin-right: 20px;
+	}
+	article.service br {
+		display: none;
+	}
+	article.service p {
+		width: auto;
+		margin: 0;
+	}
+	.service_btn {
+		position: absolute;
+		top: 20px; right: 20px;
+		margin: 0;
+		width: auto;
+		outline: none;
+		padding: 0;
+		font-size: 12px;
+	}
+
+	/* article.more of #service Style */
+	#service article.more {
+		width: 100%;
+		padding: 20px 0;
+	}
+	#service article.more h3, #service article.more .content {
+		margin-left: 45px;
+	}
+	#service article.more .content {
+		margin-right: 20px;
+	}
+	#service article.more iframe {
+		width: 100%; height: auto;
+		float: none;
+		margin-bottom: 20px;
+		margin-right: 20px;
+	}
+	#service article.more .exit {
+		width: 20px; height: 20px;
+		top: 20px; padding: 5px;
+		background-size: 20px;
+	}
+
+
+
+	/* #news SECTION STYLE */
+	section.news {
+		width: 2830px;
+		/* 575px*4 + 530px */
+	}
+	article.news {
+		width: 100%; max-width: 490px; /* w:490 + p:40 + mr:45 */
+		margin-right: 45px;
+		padding: 30px 20px;
+	}
+	article.news .writer>img {
+		width: 45px; height: 45px;
+		margin-right: 10px;
+	}
+	article.news .writer>p {
+		line-height: 45px;
+	}
+
+
+
+
+	/* #recruit SECTION STYLE */
+	nav.recruit {
+		float: none;
+		margin-right: 0;
+		overflow: hidden;
+	}
+	nav.recruit ul li {
+		text-align: left;
+		margin-right: 30px;
+		float: left;
+	}
+	nav.recruit ul li:last-of-type {
+		margin-right: 0;
+	}
+
+	/* article.recruit of #recruit Style */
+	article.recruit {
+		width: auto;
+		margin-left: 30px;
+	}
+
+
+
+	/* #footer FOOTER STYLE */
+	#footer .wrap div {
+		width: 100%;
+		height: 20%;
+		float: none;
+		overflow: hidden;
+		padding: 60px 0;
+	}
+	#footer h2, #footer address, #footer h3 {
+		margin-left: 60px;
+	}
+	#footer h2 {
+		font-size: 28px;
+		margin-bottom: 0;
+	}
+	#footer h2 span:last-child {
+		margin-bottom: 0;
+	}
+	#footer h2, #footer h3 {
+		margin-top: 0;
+	}
+	#footer h3 {
+		margin-bottom: 20px;
+	}
+	#footer address {
+		font-size: 12px;
+		font-style: normal;
+	}
+
+	.follow_btn {
+		display: block;
+		opacity: 0;
+		position: fixed;
+		bottom: 30px; right: 30px;
+		z-index: 9999;
+		width: 45px; height: 45px;
+		background: url('../images/circmenu.svg') center center no-repeat;
+		background-size: 45px 45px;
+		padding: 0;
+		border: none;
+		transition: opacity 0.4s;
+	}
+}
+
+
+/* Mobile : MAX 450 px Query */
+@media only screen and (max-width: 500px) {
+	/* MARGIN SETTING */
+	article.about, article.about .subtitle, article.about p:last-of-type, div.google .subtitle, article.vision .subtitle, article.vision p:last-child, article.history .content, section.history h3, #service>.wrap, #service section.more, section.news, nav.recruit ul li, article.recruit, .hide, h2 {
+		margin-bottom: 30px;  /* 60px -> 45px -> 30px */
+	}
+	.about_more h2 {
+		margin-top: 30px; /* 60px -> 45px -> 30px */
+	}
+	#service h2, #news h2, #recruit h2 {
+		margin-top: 60px; /* 90px -> 75px -> 60px */
+	}
+	.about_more .subtitle, .about_more p, div.google p, article.vision p, article.history .content>div .subtitle, article.service>img, article.service>p, article.service>h3, #service article.more h3, article.news h3, article.news>p, article.recruit ol li {
+		margin-bottom: 20px; /* 30px -> 20px -> 20px */
+	}
+
+	/* FONT SETTING */
+	#header .intro, .about_more h2, article.service>h3, #service article.more h3, #news h2, #recruit h2, .history .subtitle, .subtitle {
+		font-size: 24px; /* 32px -> 28px -> 24px */
+	}
+	.about_more .subtitle, nav.recruit ul li a, article.recruit h3 span {
+		font-size: 20px; /* 24px -> 24px -> 20px */
+	}
+	article.news h3, article.recruit h3 {
+		font-size: 18px; /* 18px */
+	}
+
+
+
+	/* #header */
+	#header .intro {
+		bottom: 30px;
+	}
+	#logo {
+		width: 149px;
+		height: 25px;
+	}
+
+
+
+	/* #company */
+	#company {
+		text-align: justify;
+	}
+	#company .subtitle {
+		text-align: left;
+	}
+	article.about {
+		margin-right: 30px;
+	}
+	article.vision {
+		width: auto;
+		margin-right: 30px;
+	}
+	article.history {
+		width: 4455px;
+		text-align: left;
+	}
+	article.history .content {
+		width: 450px;
+	}
+	article.history .content>img {
+		width: 215px; height: 175px;
+		/* 240:196=215:175 */
+	}
+	article.history .content>div {
+		width: 215px;
+	}
+
+
+
+	/* #service SECITON STYLE */
+	article.service img {
+		width: 110px; height: auto;
+		margin-bottom: 0;
+	}
+	#service article.more h3, #service article.more .content {
+		margin-left: 20px;
+	}
+	article.more>div.content {
+		overflow: auto;
+	}
+
+
+
+	/* #news SECTION STYLE */
+	section.news {
+		width: 2080px;
+		/* 420px*4 + 400px */
+	}
+	article.news {
+		max-width: 370px; /* w:370 + p:30 + mr:20 */
+		height: 330px;
+		margin-right: 20px;
+		padding: 20px 15px;
+	}
+	article.news .writer>img {
+		width: 45px; height: 45px;
+		margin-right: 10px;
+	}
+	article.news .writer>p {
+		line-height: 45px;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	article.service img {
+		width: 95px; height: auto;
+		margin-bottom: 0;
+	}
+	article.service {
+		padding-top: 30px;
+	}
+	.service_btn {
+		position: absolute;
+		top: 0px; right: 5px;
+	}
+	section.news {
+		width: 1830px;
+		/* 370px*4 + 350px */
+	}
+	article.news {
+		max-width: 320px; /* w:320 + p:30 + mr:20 */
+		height: 400px;
+	}
+}
+
+@media only screen and (max-width: 350px) {
+	section.news {
+		width: 1580px;
+		/* 320px*4 + 300px */
+	}
+	article.news {
+		max-width: 270px; /* w:270 + p:30 + mr:20 */
+		height: 450px;
+	}
+	nav.recruit ul li {
+		margin-right: 15px;
+	}
+}
+
+
+
+
+
+@media only screen and (max-height: 500px) {
+	#nav {
+		font-size: 24px;
+	}
+	#nav div.mobile ul li {
+		margin-bottom: 30px;
+	}
+	#nav div.mobile ul li:last-child {
+		margin-bottom: 0;
+	}
+}
+
+@media only screen and (max-height: 350px) {
+	#nav div.mobile ul li {
+		margin-bottom: 20px;
+	}
+}
